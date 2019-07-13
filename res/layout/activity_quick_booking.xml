@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/quick_booking_routes" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ListView android:id="@id/Ftr_Routes_List" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="10.0dip" android:scrollingCache="true" android:divider="@android:color/transparent" android:dividerHeight="10.0dip" android:layout_above="@id/vsFooter" android:layout_below="@id/ti_class" />
+</RelativeLayout>

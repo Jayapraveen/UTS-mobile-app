@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0sp" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/normal_booking_title_text" android:layout_below="@id/vsHeader" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textFontStyle" />
+    <ScrollView android:background="@android:color/transparent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="25.0sp" android:layout_below="@id/ti_class">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/lladdView" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginLeft="10.0sp" android:layout_marginRight="10.0sp">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="left" android:id="@id/fromStation" android:layout_width="286.0sp" android:layout_height="wrap_content" android:text="@string/from_station" android:layout_weight="0.39" style="@style/textFontStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/llsrc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/lladdView" android:layout_centerHorizontal="true">
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:gravity="center|left" android:id="@id/Nb_Src_Stn" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Source Station Name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llsource3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/llremoveView" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/llsrc">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="left" android:id="@id/toStation" android:layout_width="286.0sp" android:layout_height="wrap_content" android:text="@string/to_station" android:layout_weight="0.13" style="@style/textFontStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lldstn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/llremoveView">
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:id="@id/Nb_Dstn_Stn" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Destination Station name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lldestination2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lldestination3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" />
+            </LinearLayout>
+            <Button android:textSize="18.0sp" android:textColor="@color/textcolor" android:layout_gravity="center_horizontal" android:id="@id/Nb_Submit" android:background="@drawable/round_button" android:layout_width="200.0sp" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:layout_marginBottom="10.0sp" android:text="@string/done_text" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/lldstn" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

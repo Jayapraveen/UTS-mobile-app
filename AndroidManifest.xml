@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cris.utsmobile" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="true" android:fullBackupContent="true" android:debuggable="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="androidx.multidex.MultiDexApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="com.cris.utsmobile.mainmenuitems.SearchCTBasedOnSRCActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/app_name" android:name="com.cris.utsmobile.mainmenuitems.MainMenuActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/app_name" android:name="com.cris.utsmobile.registration.Registration" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:label="@string/title_activity_otp" android:name="com.cris.utsmobile.mainmenuitems.OtpValidationActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_quick_booking" android:name="com.cris.utsmobile.mainmenuitems.QuickBookingActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_normal__booking" android:name="com.cris.utsmobile.journeybooking.NormalBookingActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/title_activity_normal__booking_1" android:name="com.cris.utsmobile.journeybooking.NormalBooking1Activity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.mainmenuitems.Login" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_booking__history" android:name="com.cris.utsmobile.mainmenuitems.BookingHistoryActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_route" android:name="com.cris.utsmobile.routes.RouteRegActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_enquiry" android:name="com.cris.utsmobile.enquiry.EnquiryActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_enquiry__change_city" android:name="com.cris.utsmobile.enquiry.EnqChangeCityActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.enquiry.EnqChangeFtrActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_enquiry__change_jrny" android:name="com.cris.utsmobile.enquiry.EnqChangeJrnyActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_enquiry__change_jrny1" android:name="com.cris.utsmobile.enquiry.EnqChangeJrny1Activity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_enquiry__change_pass" android:name="com.cris.utsmobile.enquiry.EnqChangePasActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_route__nb" android:name="com.cris.utsmobile.routes.RouteJrnyActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_route__nb" android:name="com.cris.utsmobile.routes.RouteSeasonActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_tkt__info" android:name="com.cris.utsmobile.journeybooking.jrnyTicketWithQRActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_cancel__ticket" android:name="com.cris.utsmobile.mainmenuitems.CancelTicketActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_tkt__info__ircode" android:name="com.cris.utsmobile.journeybooking.JrnyTicketBookedActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.enquiry.EnqAddFtrActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_route_addftr" android:name="com.cris.utsmobile.routes.RouteAddFtrActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_enquiry__show_jrny" android:name="com.cris.utsmobile.enquiry.EnqShowJrnyActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_surrender_wallet" android:name="com.cris.utsmobile.walletrecharge.SurrenderWalletActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_initialize" android:name="com.cris.utsmobile.mainmenuitems.InitializeStationActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_show__ticket" android:name="com.cris.utsmobile.mainmenuitems.Show_Ticket" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_about" android:name="com.cris.utsmobile.helpingclasses.DisplayWebViewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_splash" android:name="com.cris.utsmobile.mainmenuitems.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_term" android:name="com.cris.utsmobile.walletrecharge.WebViewCallsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_id_card" android:name="com.cris.utsmobile.mainmenuitems.IDCardActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_recharge__history" android:name="com.cris.utsmobile.walletrecharge.RechargeHistoryActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_edit__id_card" android:name="com.cris.utsmobile.enquiry.EditIDCardActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_book__ticket" android:name="com.cris.utsmobile.journeybooking.BookJrnyTicketActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_mainmenuoff" android:name="com.cris.utsmobile.mainmenuitems.MainMenuOffActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_platform_ticket" android:name="com.cris.utsmobile.platformbooking.PftTicketBookingActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_pft__ticket_info_ircode" android:name="com.cris.utsmobile.platformbooking.PftTicketBookedActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_pft__ticket_info_with__qrcode" android:name="com.cris.utsmobile.platformbooking.PftTicketWithQRActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_book__tickets_" android:name="com.cris.utsmobile.mainmenuitems.TicketsAvailableActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_main" android:name="com.cris.utsmobile.mainmenuitems.NotificationResultActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_season_ticket" android:name="com.cris.utsmobile.seasonbooking.SeasonTicketActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_ticket_issue" android:name="com.cris.utsmobile.seasonbooking.SeasonIssueActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_ticket_issue1" android:name="com.cris.utsmobile.seasonbooking.SeasonIssue1Activity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_strenew" android:name="com.cris.utsmobile.seasonbooking.SeasonRenewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_ticket__renew" android:name="com.cris.utsmobile.seasonbooking.SeasonRenew1Activity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_edit_address" android:name="com.cris.utsmobile.seasonbooking.EditAddressActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_ticket__renew1" android:name="com.cris.utsmobile.seasonbooking.BookSeasonTicketActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_book_ticket_season" android:name="com.cris.utsmobile.seasonbooking.SeasonTicketBookedActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_season__ticket_info__qrcode" android:name="com.cris.utsmobile.seasonbooking.SeasonTicketWithQRActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/personal_details_text" android:name="com.cris.utsmobile.enquiry.DobGenderActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_ticket__option" android:name="com.cris.utsmobile.mainmenuitems.BookingOptionsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:label="@string/title_activity_forgot_password" android:name="com.cris.utsmobile.mainmenuitems.ForgotPassword" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar">
+            <intent-filter>
+                <action android:name=".ForgotPassword"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.cris.uts.notification.MyFireballMessagingService" android:permission="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notify"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/title_background"/>
+        <receiver android:name="com.cris.uts.notification.SMSReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.cris.uts.generalclasses.BackGroundTask"/>
+        <activity android:name="com.cris.utsmobile.qrbooking.QRRouteActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.qrbooking.QRBaseActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.qrbooking.QRJourneyActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.qrbooking.QRPlatformActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.uts.notification.savenotification.NotificationFragmentActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.ntes.livestation.activity.LiveStationActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.mainmenuitems.HelpActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.qrbooking.QRTicketsMenuActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.uts.location.AppCompatPermissionActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.helpingclasses.BaseActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.walletrecharge.RWalletActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <activity android:name="com.cris.utsmobile.enquiry.ChangeHandsetActivity" android:screenOrientation="portrait" android:theme="@style/ThemeWithToolBar"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="d2c786cdfc62dd487114ac296e173e085dd7d745"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.cris.utsmobile.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.cris.utsmobile.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+    </application>
+</manifest>

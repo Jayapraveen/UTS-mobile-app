@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0sp" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:layout_marginBottom="5.0sp" android:text="@string/choose_booking_mode" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ScrollView android:background="@color/tkt_options_backcolor" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ti_class" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/rl_book_and_travel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/textcolor" android:id="@id/btn_book_and_travel" android:background="@color/title_background" android:padding="10.0dip" android:layout_width="125.0dip" android:layout_height="125.0dip" android:text="@string/str_book_and_travel" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/textViewBookAndTravel" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_text_book_and_travel" android:layout_toRightOf="@id/btn_book_and_travel" style="@style/textFontStyle" />
+                </RelativeLayout>
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_book_and_activate" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/textViewBookAndActivate" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_text_book_and_activate" android:layout_toLeftOf="@id/btn_book_and_activate" android:layout_alignParentTop="true" style="@style/textFontStyle" />
+                    <Button android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/textcolor" android:id="@id/btn_book_and_activate" android:background="@color/title_background" android:padding="10.0dip" android:layout_width="125.0dip" android:layout_height="125.0dip" android:text="@string/str_book_and_activate" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/textFontStyle" />
+                </RelativeLayout>
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/msgTextView" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_act_message" style="@style/textFontStyle" />
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:orientation="horizontal" android:id="@id/rl_book_and_print" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/textcolor" android:id="@id/btn_book_and_print" android:background="@color/title_background" android:padding="10.0dip" android:layout_width="125.0dip" android:layout_height="125.0dip" android:text="@string/book_and_print_paper_" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/textViewBookAndPrint" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_text_book_and_print_paper" android:layout_toRightOf="@id/btn_book_and_print" style="@style/textFontStyle" />
+                </RelativeLayout>
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

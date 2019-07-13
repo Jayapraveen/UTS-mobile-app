@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/ticket_renew" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textFontStyle" />
+    <View android:id="@id/line1" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginLeft="15.0sp" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="15.0sp" android:layout_below="@id/ti_class" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/title_background" android:layout_gravity="center_horizontal" android:id="@id/ti_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginTop="4.0dip" android:layout_marginRight="15.0sp" android:text="@string/reg_st_renew_alert_no_st" android:layout_below="@id/line1" style="@style/textFontStyle" />
+    <View android:id="@id/line2" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginLeft="15.0sp" android:layout_marginTop="4.0sp" android:layout_marginRight="15.0sp" android:layout_below="@id/ti_text" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line2">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0sp" android:layout_marginRight="15.0sp">
+            <EditText android:textSize="18.0sp" android:textColor="@color/title_background" android:gravity="center" android:layout_gravity="center" android:id="@id/editTextutsno_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:hint="Enter UTS Number" android:ems="10" android:maxLength="10" android:digits="0123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm" android:inputType="textNoSuggestions" android:backgroundTint="@android:color/transparent" style="@style/textFontStyle" />
+            <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_below="@id/ti_text" />
+            <requestFocus />
+            <Button android:textSize="18.0sp" android:textColor="@color/textcolor" android:layout_gravity="center" android:id="@id/btnproceed" android:background="@drawable/round_button" android:layout_width="200.0sp" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" android:layout_marginBottom="25.0dip" android:text="@string/proceed" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

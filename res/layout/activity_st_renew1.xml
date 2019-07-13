@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:background="@drawable/bgi" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0sp" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/ticket_details" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textFontStyle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0sp" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0sp" android:layout_marginBottom="25.0sp" android:layout_below="@id/ti_class">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0sp" android:layout_marginRight="5.0sp" android:layout_marginBottom="25.0sp">
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/name_col" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/editTextName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/age_col" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/resultage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/doblayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0sp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/date_of_birth" />
+                        <Button android:id="@id/btnEditDob" android:background="@drawable/pencil" android:layout_width="20.0sp" android:layout_height="20.0sp" android:layout_marginTop="5.0sp" />
+                        <Button android:id="@id/btnEditDobhelp" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="20.0sp" android:layout_marginTop="5.0sp" />
+                    </LinearLayout>
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/dobData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="@string/please_add_your_date_of_birth" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/fromStation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="2.0sp" android:text="@string/source" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/textViewfromStation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/toStation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="2.0sp" android:text="@string/destination" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/textViewtoStation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="2.0sp" android:text="@string/via_col_text" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/textViewtvia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/train_type" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/trainTypetext" android:layout_width="wrap_content" android:layout_height="40.0sp" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0sp" android:layout_marginTop="5.0sp" android:text="@string/train_class" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/tktclasstext" android:layout_width="wrap_content" android:layout_height="40.0sp" android:layout_marginLeft="30.0sp" android:layout_marginTop="2.0sp" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="40.0sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/duration_col" />
+                <Spinner android:id="@id/spinner_tk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:text="@string/select_pymtmode" />
+                <Spinner android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:entries="@array/payment" android:id="@id/renewpaytype" android:layout_width="fill_parent" android:layout_height="40.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/existing_validity_period" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/validityTextData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:layout_marginRight="5.0sp" android:text="" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/id_card_number_col" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/resultidCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/idcardLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/idcardTypeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:text="@string/id_card_type_col" />
+                        <Button android:id="@id/btnEditIdCard" android:background="@drawable/pencil" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="5.0sp" />
+                        <Button android:id="@id/btnEditIdCardhelp" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="20.0sp" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginTop="5.0sp" android:layout_marginRight="@dimen/activity_vertical_margin" />
+                    </LinearLayout>
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/resultidCardType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="@string/add_your_id_card_no" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/addressLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/address" />
+                <Button android:id="@id/btnEditAddress" android:background="@drawable/pencil" android:layout_width="20.0sp" android:layout_height="20.0sp" android:layout_marginTop="5.0sp" />
+                <Button android:id="@id/btnEditAddresshelp" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="20.0sp" android:layout_marginTop="5.0sp" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/addressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0sp" android:layout_marginTop="2.0sp" android:layout_marginRight="5.0sp" android:text="" />
+            <LinearLayout android:orientation="vertical" android:id="@id/gst_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/gst_title" />
+                <requestFocus />
+                <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/gstin_title" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/title_background" android:textColorHint="@color/title_background" android:id="@id/gstin_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/gstin_hint" android:maxLength="15" android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789" android:inputType="textNoSuggestions" />
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <requestFocus />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0sp" android:layout_marginBottom="25.0sp" android:layout_weight="0.5">
+                <Button android:textSize="18.0sp" android:textColor="@color/textcolor" android:layout_gravity="center_vertical" android:id="@id/btnproceed" android:background="@drawable/round_button" android:layout_width="200.0sp" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:layout_marginBottom="10.0sp" android:text="@string/get_fare" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

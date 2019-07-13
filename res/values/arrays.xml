@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Class">
+        <item>SECOND (II)</item>
+        <item>FIRST (FC)</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+        <item>TRANSGENDER</item>
+    </string-array>
+    <string-array name="city">
+        <item>CHENNAI</item>
+        <item>MUMBAI</item>
+    </string-array>
+    <string-array name="concession_types">
+        <item>SELECT CONCESSION TYPE</item>
+        <item>SENIOR CITIZEN MEN - SRCTZN</item>
+        <item>SENIOR CITIZEN WOMEN - SRCTZW</item>
+        <item>SENIOR CITIZEN TRANSGENDER - SRCTZT</item>
+    </string-array>
+    <string-array name="no_0f_passengers">
+        <item>ZERO (0)</item>
+        <item>ONE (1)</item>
+        <item>TWO (2)</item>
+        <item>THREE (3)</item>
+        <item>FOUR (4)</item>
+    </string-array>
+    <string-array name="no_0f_passengers_platform">
+        <item>ONE (1)</item>
+        <item>TWO (2)</item>
+        <item>THREE (3)</item>
+        <item>FOUR (4)</item>
+    </string-array>
+    <string-array name="payment">
+        <item>RWALLET</item>
+        <item>OTHERS</item>
+    </string-array>
+    <string-array name="states_list">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttarakhand</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+        <item>Andaman and Nicobar</item>
+        <item>Chandigarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Lakshadweep</item>
+        <item>Puducherry</item>
+    </string-array>
+    <string-array name="ticket_type">
+        <item>JOURNEY (J)</item>
+        <item>RETURN (R)</item>
+    </string-array>
+    <string-array name="train_type">
+        <item>ORDINARY (O)</item>
+        <item>SUPERFAST (S)</item>
+        <item>EXPRESS (E)</item>
+    </string-array>
+</resources>

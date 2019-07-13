@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="fill_parent">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/back_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/actionbarTextView" android:padding="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NOTIFICATIONS" android:layout_weight="1.0" />
+    </TableRow>
+</TableLayout>

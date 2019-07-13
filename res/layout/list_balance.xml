@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:padding="4.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:background="@drawable/round_leftbottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/round_ontop" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/sd" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/round_ontop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/title_background" android:ellipsize="none" android:layout_gravity="center|left" android:id="@id/bal_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scrollHorizontally="false" android:singleLine="false" android:layout_weight="1.0" style="@style/textFontStyle" />
+                    <TextView android:textStyle="bold" android:textColor="@color/title_background" android:ellipsize="none" android:layout_gravity="center|left" android:id="@id/bal_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scrollHorizontally="false" android:singleLine="false" android:layout_weight="1.0" style="@style/textFontStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/list_color" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <TextView android:textStyle="bold" android:textColor="@color/title_background" android:layout_gravity="center|left" android:id="@id/bal_paymode" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" style="@style/textFontStyle" />
+                <TextView android:textStyle="bold" android:textColor="@color/title_background" android:layout_gravity="center|left" android:id="@id/bal_location" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" style="@style/textFontStyle" />
+            </LinearLayout>
+            <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/personal_details_text" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textFontStyle" />
+    <View android:id="@id/line2" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginLeft="15.0sp" android:layout_marginTop="4.0dip" android:layout_marginRight="15.0sp" android:layout_below="@id/ti_class" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/line2">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0sp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/title_background" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/select_id_card_type" />
+            <TextView android:textStyle="bold" android:gravity="center|left" android:id="@id/Id_card_type" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/title_background" android:layout_gravity="left" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="4.0dip" android:text="@string/id_card_number" />
+            <TextView android:gravity="center_vertical" android:id="@id/Id_card_no" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:ems="10">
+                <requestFocus />
+            </TextView>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/dob_genderLL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:text="@string/gender" />
+                    <Spinner android:id="@id/sexSpinner" android:layout_width="142.0dip" android:layout_height="42.0dip" android:splitMotionEvents="true" android:spinnerMode="dialog" android:animateLayoutChanges="true" android:transitionGroup="true" android:touchscreenBlocksFocus="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="0.91">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/title_background" android:id="@id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/date_of_birth" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/dobLayoutR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0sp">
+                        <Button android:textColor="@color/title_background" android:gravity="top" android:id="@id/btnDobR" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="@string/mm_dd_yyyy" />
+                        <requestFocus />
+                        <Button android:id="@id/btnEditDobhelpR" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="20.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/L" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/Id_card_no">
+                <Button android:textColor="@color/mainbackgound" android:id="@id/Id_card_done" android:background="@drawable/round_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/edit" android:layout_weight="0.5" />
+                <Button android:textColor="@color/mainbackgound" android:id="@id/Id_card_exit" android:background="@drawable/round_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/exit_text" android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

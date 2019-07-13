@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/border" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/textView_lowbal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentTop="true" style="@style/textFontStyle" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/textView_lowbal_fare" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textView_lowbal" style="@style/textFontStyle" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/textView_lowbal_desc" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low_rwallet_balance_aleart_text" android:layout_below="@id/textView_lowbal_fare" style="@style/textFontStyle" />
+                <Button android:textSize="15.0sp" android:textColor="@color/textcolor" android:id="@id/btn_other_payments" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/other_payment_options" android:layout_below="@id/btn_rech_rwallet" style="@style/textFontStyle" />
+                <Button android:textSize="15.0sp" android:textColor="@color/textcolor" android:id="@id/btn_rech_rwallet" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recharge_rwallet" android:layout_below="@id/textView_lowbal_desc" style="@style/textFontStyle" />
+                <Button android:textSize="15.0sp" android:textColor="@color/textcolor" android:id="@id/btn_exit" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/exit_text" android:layout_below="@id/btn_other_payments" style="@style/textFontStyle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

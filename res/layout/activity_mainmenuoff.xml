@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <Button android:textColor="@color/mainbackgound" android:id="@id/showtkt" android:background="@drawable/round_button" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="@string/show_ticket" android:layout_below="@id/ti_class" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <Button android:textColor="@color/mainbackgound" android:id="@id/exit" android:background="@drawable/round_button" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/exit_text" android:layout_below="@id/showtkt" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/offline_mode_text" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

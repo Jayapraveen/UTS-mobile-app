@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout8" android:background="@drawable/round_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_above="@id/enq_sh_jrny_done" android:layout_below="@id/ll1" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/ll1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_header_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="center" android:id="@id/ti_class" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/frequent_travel_journey_details" />
+    </LinearLayout>
+    <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip" android:layout_below="@id/linearLayout4" android:layout_alignParentLeft="true" />
+    <View android:id="@id/view3" android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginRight="35.0dip" android:layout_below="@id/linearLayout2" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_weight="1.0" android:layout_below="@id/ll1" android:layout_alignParentLeft="true">
+        <TextView android:textColor="@color/title_background" android:id="@id/enq_sh_jrny_tkttype" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout3" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" android:layout_below="@id/linearLayout2" android:layout_alignParentLeft="true">
+        <TextView android:textColor="@color/title_background" android:id="@id/enq_sh_jrny_classcode" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout4" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" android:layout_below="@id/linearLayout3" android:layout_alignParentLeft="true">
+        <TextView android:textColor="@color/title_background" android:id="@id/enq_sh_jrny_traintype" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout5" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" android:layout_below="@id/linearLayout4" android:layout_alignParentLeft="true">
+        <TextView android:textColor="@color/title_background" android:id="@id/enq_sh_jrny_adult" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/title_background" android:id="@id/enq_sh_jrny_child" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout6" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" android:layout_below="@id/linearLayout5" android:layout_alignParentLeft="true">
+        <TextView android:textColor="@color/title_background" android:id="@id/enq_sh_jrny_paytype" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/linearLayout6" android:layout_alignParentLeft="true" />
+    <Button android:textColor="@color/textcolor" android:id="@id/enq_sh_jrny_done" android:background="@drawable/round_button" android:paddingLeft="5.0dip" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="@string/edit" android:layout_alignTop="@id/linearLayout7" android:layout_alignRight="@id/linearLayout8" />
+</RelativeLayout>

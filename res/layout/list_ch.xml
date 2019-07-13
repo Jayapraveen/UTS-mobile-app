@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:padding="4.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_show_ticket" android:background="@color/list_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@id/Ch_Jrny_Type">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/sd" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/textcolor" android:gravity="center_vertical" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:ellipsize="none" android:layout_gravity="center|left" android:id="@id/Ch_Src_Stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:scrollHorizontally="false" android:singleLine="false" style="@style/textFontStyle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/textcolor" android:gravity="center_vertical" android:id="@id/icon_D" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:ellipsize="none" android:layout_gravity="center|left" android:id="@id/Ch_Dstn_Stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:scrollHorizontally="false" android:singleLine="false" style="@style/textFontStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/textcolor" android:gravity="center_vertical" android:id="@id/Ch_tvia" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" via " />
+                <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/Ch_Via" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="" android:layout_weight="0.65" style="@style/textFontStyle" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="right" android:id="@id/Ch_fare" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="0.35" style="@style/textFontStyle" />
+            </LinearLayout>
+            <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/gst_layout_ircode" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linearLayout4" android:layout_alignLeft="@id/ll1">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_gst" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/tkt_header_color" android:layout_gravity="center_horizontal" android:id="@id/gst_heading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/gst" style="@style/textFontStyle" />
+                    <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="2.0sp" android:layout_marginBottom="2.0sp" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_service_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="SAC:00123456" style="@style/textFontStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_cgst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="C(10.01%):123.11" style="@style/textFontStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_tgst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="TGST:234.11" style="@style/textFontStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_breakup3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="GST BREKUP 3" style="@style/textFontStyle" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_ir_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="IR:XXXXXXXXXXXXXXX" style="@style/textFontStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_s_u_gst" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="S/U(8.05%):103.08" style="@style/textFontStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_psngstin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="PGSTIN" style="@style/textFontStyle" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:id="@id/gst_breakup4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="GST BREAKUP 4" style="@style/textFontStyle" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="2.0sp" android:layout_below="@id/ll_gst" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/Ch_UtsNo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:layout_weight="0.55" style="@style/textFontStyle" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="right" android:id="@id/Ch_Date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:layout_weight="0.45" style="@style/textFontStyle" />
+            </LinearLayout>
+            <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <me.grantland.widget.AutofitTextView android:textSize="12.0sp" android:textColor="@color/title_background" android:gravity="left" android:id="@id/Ch_No_Of_Adult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="40.0" style="@style/textFontStyle" />
+                <me.grantland.widget.AutofitTextView android:textSize="12.0sp" android:textColor="@color/title_background" android:gravity="center" android:id="@id/Ch_Class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="30.0" style="@style/textFontStyle" />
+                <me.grantland.widget.AutofitTextView android:textSize="12.0sp" android:textColor="@color/title_background" android:gravity="right" android:id="@id/Ch_Train_Type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_weight="30.0" style="@style/textFontStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/round_right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/imageView1" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/arrow" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/title_background" android:gravity="center" android:id="@id/Ch_Jrny_Type" android:background="@color/list_color" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/layout_live_stn" style="@style/textFontStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_live_stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_live" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/title_background" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <TextView android:textStyle="bold" android:textColor="@color/textcolor" android:gravity="center" android:background="@color/title_background" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_station" android:drawableRight="@drawable/ic_search" android:drawablePadding="2.0dip" style="@style/textFontStyle" />
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <View android:background="@color/title_background" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/title_background" android:gravity="center" android:id="@id/isAvtivated" android:background="@color/list_color" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" style="@style/textFontStyle" />
+    </LinearLayout>
+</RelativeLayout>

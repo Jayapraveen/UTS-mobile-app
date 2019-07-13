@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:textColorPrimary="@color/title_background" android:id="@id/menu_item_login" android:orderInCategory="100" android:title="@string/login_text" app:showAsAction="ifRoom" />
+    <item android:textColorPrimary="@color/title_background" android:id="@id/menu_item_user_id_1" android:orderInCategory="150" android:title="@string/user_id_label" app:showAsAction="never" />
+    <item android:textColorPrimary="@color/title_background" android:id="@id/menu_item_register" android:orderInCategory="200" android:title="@string/registration_label" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_notification" android:textColorPrimary="@color/title_background" android:id="@id/menu_item_notification" android:orderInCategory="300" android:title="@string/notification" app:showAsAction="never" />
+    <item android:textColorPrimary="@color/title_background" android:id="@id/menu_item_home" android:orderInCategory="400" android:title="@string/home_label" app:showAsAction="never" />
+    <item android:textColorPrimary="@color/title_background" android:id="@id/menu_item_user_id_2" android:orderInCategory="500" android:title="@string/user_id_label" app:showAsAction="never" />
+</menu>

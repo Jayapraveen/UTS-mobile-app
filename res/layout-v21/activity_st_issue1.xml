@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0sp" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/tkt_issue_text" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textFontStyle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0sp" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="5.0sp" android:layout_marginBottom="25.0sp" android:layout_below="@id/ti_class">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0sp" android:layout_marginRight="5.0sp" android:layout_marginBottom="25.0sp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="40.0sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:text="@string/train_type" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="40.0sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:text="@string/class_type" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="40.0sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:text="@string/duration" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/trainTypeSpinner" android:layout_width="fill_parent" android:layout_height="40.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+                    <Spinner android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/trainClassSpinner" android:layout_width="fill_parent" android:layout_height="40.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+                    <Spinner android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/tktDurationSpinner" android:layout_width="fill_parent" android:layout_height="40.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/name_col" />
+            <EditText android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/editTextName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:text="" android:maxLength="20" android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM. " android:inputType="textNoSuggestions" />
+            <requestFocus />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/gender_col" />
+                    <Spinner android:id="@id/sexSpinner" android:layout_width="122.0sp" android:layout_height="41.0sp" android:layout_marginLeft="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0sp" android:layout_marginTop="9.0sp" android:text="@string/date_of_birth" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/dobLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0sp">
+                        <Button android:textColor="@color/title_background" android:gravity="top" android:id="@id/btnDob" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:text="@string/dd_mm_yyyy" />
+                        <requestFocus />
+                        <Button android:id="@id/btnEditDob" android:background="@drawable/pencil" android:layout_width="20.0sp" android:layout_height="20.0sp" />
+                        <Button android:id="@id/btnEditDobhelp" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="20.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/select_idcard_type" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Spinner android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/idCardTypeSpinner1" android:layout_width="fill_parent" android:layout_height="40.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:text="@string/id_card_number" />
+                    <EditText android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/resultidCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:text="" android:maxLength="25" android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM ,.-/ " />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:text="@string/select_pymtmode" />
+                    <Spinner android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:entries="@array/payment" android:id="@id/paytype" android:layout_width="fill_parent" android:layout_height="40.0sp" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:spinnerMode="dialog" style="@style/spinner_style" />
+                    <requestFocus />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0sp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0sp">
+                <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="5.0sp" android:text="@string/address" />
+                <Button android:id="@id/btnEditAddress" android:background="@drawable/pencil" android:layout_width="20.0sp" android:layout_height="20.0sp" android:layout_marginTop="5.0sp" />
+                <Button android:id="@id/btnEdithelp" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="20.0sp" android:layout_marginTop="5.0sp" />
+            </LinearLayout>
+            <EditText android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/btnaddressText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="20.0sp" android:text="" />
+            <requestFocus />
+            <LinearLayout android:orientation="vertical" android:id="@id/gst_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/gst_title" />
+                <requestFocus />
+                <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/gstin_title" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/title_background" android:textColorHint="@color/title_background" android:id="@id/gstin_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/gstin_hint" android:maxLength="15" android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789" android:inputType="textNoSuggestions" android:backgroundTint="@android:color/transparent" />
+                <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                <requestFocus />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0sp" android:layout_marginBottom="25.0sp">
+                <Button android:textSize="18.0sp" android:textColor="@color/textcolor" android:layout_gravity="center_vertical" android:id="@id/btngetFareissue" android:background="@drawable/round_button" android:layout_width="200.0sp" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:layout_marginBottom="10.0sp" android:text="@string/get_fare" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

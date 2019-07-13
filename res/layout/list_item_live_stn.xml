@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_layout" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="100.0" android:minHeight="70.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="35.0">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="center|left" android:id="@id/train_no" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="123545" android:freezesText="true" android:layout_weight="1.0" />
+            <me.grantland.widget.AutofitTextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/train_name" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="jaipur" android:maxLines="3" android:minLines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="13.0">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/sta_value" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="12:45" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/std_value" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="12:50" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="40.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/darkred" android:gravity="center" android:id="@id/delay_arr" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="00:18" android:layout_weight="30.0" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/eta_value" android:background="@color/orange" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="13:03" android:layout_weight="30.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/darkred" android:gravity="center" android:id="@id/delay_dep" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="00:18" android:layout_weight="30.0" />
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/etd_value" android:background="@color/orange" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="13:08" android:layout_weight="30.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:weightSum="2.0" android:layout_weight="12.0">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center|left" android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="PF*" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center|left" android:id="@id/pf_value" android:background="@color/orange" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="2" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <LinearLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/textcolor" android:gravity="center" android:layout_gravity="center|left" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" />
+            <me.grantland.widget.AutofitTextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Ajmer" android:maxLines="3" android:minLines="2" />
+        </LinearLayout>
+        <LinearLayout android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/textcolor" android:gravity="center" android:layout_gravity="center|left" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" />
+            <me.grantland.widget.AutofitTextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/destination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Ajmer" android:maxLines="3" android:minLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

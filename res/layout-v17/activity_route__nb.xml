@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/select_route" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ListView android:id="@id/Routes_List_Nb" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/activity_vertical_margin" android:divider="@android:color/transparent" android:dividerHeight="4.0dip" android:layout_above="@id/vsFooter" android:layout_below="@id/sd" android:layout_alignLeft="@id/sd" android:layout_alignRight="@id/sd" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sd" android:background="@drawable/round_button" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" android:baselineAligned="false" android:layout_below="@id/ti_class" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textColor="@color/textcolor" android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" android:textAlignment="center" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/textcolor" android:ellipsize="none" android:layout_gravity="center|left" android:id="@id/Src_Stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scrollHorizontally="false" android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textColor="@color/textcolor" android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:textAlignment="center" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/textcolor" android:ellipsize="none" android:layout_gravity="center|left" android:id="@id/Dstn_Stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scrollHorizontally="false" android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

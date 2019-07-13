@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/PrimaryColor" android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dear_user" style="@style/textFontStyle" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_background" android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/rate_it_in_the_play_store" style="@style/textFontStyle" />
+        <RatingBar android:layout_gravity="center_horizontal" android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rating="5.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_background" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thanks_for_your_support" style="@style/textFontStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin" android:weightSum="3.0">
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/PrimaryColor" android:id="@id/btn_never" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/never" android:layout_weight="1.0" style="@style/textFontStyle" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/PrimaryColor" android:id="@id/btn_later" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/later" android:layout_weight="1.0" style="@style/textFontStyle" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/PrimaryColor" android:id="@id/btn_rate_5_star" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rate_us" android:layout_weight="1.0" style="@style/textFontStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

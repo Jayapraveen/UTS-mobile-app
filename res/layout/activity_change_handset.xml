@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bgi" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/title_background" android:id="@id/tv_change_handset_heading" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/change_handset_with_active_valid_ticket" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/title_background" android:id="@id/tv_change_handset_description" android:background="@drawable/view_border" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_horizontal_margin" android:text="@string/change_handset_details" android:lineSpacingExtra="8.0dip" />
+</LinearLayout>

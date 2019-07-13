@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/footer_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/txtFooter" android:fitsSystemWindows="true" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="false" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+</RelativeLayout>

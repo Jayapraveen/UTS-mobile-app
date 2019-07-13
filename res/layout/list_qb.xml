@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:padding="4.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/Qb_Jrny_Type">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/sd" android:background="#ffffc0cb" android:padding="2.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/textcolor" android:gravity="center_vertical" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:layout_gravity="center|left" android:id="@id/Qb_Src_Stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/textFontStyle" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/textcolor" android:gravity="center_vertical" android:background="@drawable/circle_shape_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:layout_gravity="center|left" android:id="@id/Qb_Dstn_Stn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/textFontStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/round_leftbottom" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:gravity="left" android:id="@id/Qb_No_Of_Adult" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="40.0" style="@style/textFontStyle" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:gravity="center" android:id="@id/Qb_Class" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="30.0" style="@style/textFontStyle" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/title_background" android:gravity="right" android:id="@id/Qb_Train_Type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="30.0" style="@style/textFontStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/round_right" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/imageView1" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/arrow" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:textColor="@color/title_background" android:gravity="center" android:id="@id/Qb_Jrny_Type" android:background="@drawable/round_ontop" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_alignLeft="@id/linearLayout1" android:layout_alignParentTop="true" style="@style/textFontStyle" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bgi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/vsHeader" android:layout="@layout/header" android:inflatedId="@id/header" android:layout_width="fill_parent" android:layout_height="40.0sp" />
+    <ViewStub android:id="@id/vsFooter" android:layout="@layout/footer" android:inflatedId="@id/Footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:id="@id/ti_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_header_margin" android:text="@string/tkt_issue_text" android:layout_below="@id/vsHeader" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ScrollView android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginBottom="25.0sp" android:layout_below="@id/ti_class">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/lladdView" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginLeft="10.0sp" android:layout_marginRight="10.0sp">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="left" android:id="@id/fromStation" android:layout_width="286.0sp" android:layout_height="wrap_content" android:text="@string/fromstation_s" android:layout_weight="0.39" style="@style/textFontStyle" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/title_background" android:gravity="center" android:id="@id/addsrc" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/add_source" />
+                    <ImageButton android:gravity="center" android:id="@id/addSrcButton" android:background="@drawable/addlist" android:layout_width="30.0sp" android:layout_height="fill_parent" style="?android:buttonStyleSmall" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/llsrc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/lladdView" android:layout_centerHorizontal="true">
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:gravity="center|left" android:id="@id/Nb_Src_Stn" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Source Station Name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llsource2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp">
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginTop="10.0sp" android:layout_below="@id/ti_class">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/title_background" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete_source" />
+                        <ImageButton android:id="@id/deletesrcButton1" android:background="@drawable/removelist" android:layout_width="30.0sp" android:layout_height="fill_parent" android:text="@string/add" style="?android:buttonStyleSmall" />
+                    </LinearLayout>
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:gravity="center|left" android:id="@id/srcAuto1" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Source Station Name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llsource3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp">
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginTop="10.0sp" android:layout_below="@id/ti_class">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/title_background" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete_source" />
+                        <ImageButton android:id="@id/deletesrcButton2" android:background="@drawable/removelist" android:layout_width="30.0sp" android:layout_height="fill_parent" android:text="@string/add" style="?android:buttonStyleSmall" />
+                    </LinearLayout>
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:gravity="center|left" android:id="@id/srcAuto2" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Source Station Name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/line1" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="20.0sp" android:layout_marginRight="10.0sp" />
+            <View android:id="@id/line2" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="0.5sp" android:layout_marginLeft="10.0sp" android:layout_marginRight="10.0sp" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/llremoveView" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/llsrc">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/title_background" android:gravity="left" android:id="@id/toStation" android:layout_width="286.0sp" android:layout_height="wrap_content" android:text="@string/tostation_s" android:layout_weight="0.13" style="@style/textFontStyle" />
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/title_background" android:gravity="center" android:id="@id/addDes" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/add_destination" />
+                    <ImageButton android:id="@id/addDesButton" android:background="@drawable/addlist" android:layout_width="30.0sp" android:layout_height="fill_parent" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lldstn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp" android:layout_below="@id/llremoveView">
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:id="@id/Nb_Dstn_Stn" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Destination Station name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lldestination2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp">
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginTop="10.0sp" android:layout_below="@id/ti_class">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/title_background" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete_destination" />
+                        <ImageButton android:id="@id/deletedesButton1" android:background="@drawable/removelist" android:layout_width="30.0sp" android:layout_height="fill_parent" android:text="@string/add" style="?android:buttonStyleSmall" />
+                    </LinearLayout>
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:gravity="center|left" android:id="@id/desAuto1" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Destination Station name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lldestination3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="1.0sp" android:layout_marginRight="10.0sp">
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0sp" android:layout_marginTop="10.0sp" android:layout_below="@id/ti_class">
+                        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/title_background" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete_destination" />
+                        <ImageButton android:id="@id/deletedesButton2" android:background="@drawable/removelist" android:layout_width="30.0sp" android:layout_height="fill_parent" android:text="@string/add" style="?android:buttonStyleSmall" />
+                    </LinearLayout>
+                    <AutoCompleteTextView android:textSize="16.0sp" android:textColor="@color/title_background" android:gravity="center|left" android:id="@id/desAuto2" android:background="@drawable/round_textview" android:paddingLeft="10.0sp" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Destination Station name/Code" android:inputType="textNoSuggestions" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:layout_below="@id/lldstn">
+                <Button android:textSize="18.0sp" android:textColor="@color/textcolor" android:layout_gravity="center" android:id="@id/Nb_Submit" android:background="@drawable/round_button" android:layout_width="200.0sp" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:layout_marginBottom="10.0sp" android:text="@string/done_text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginRight="10.0sp" android:layout_marginBottom="25.0sp" android:layout_below="@id/lldstn">
+                <TextView android:textSize="15.0dip" android:textColor="@color/title_background" android:id="@id/textView1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:text="@string/station_not_found_sync_stations" />
+                <Button android:id="@id/nb_sync" android:background="@drawable/sync" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0sp" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
